@@ -1,0 +1,165 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* working on the nav or our nav styles goes here */
+nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #00000007;
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+    transition: background 1s ease-in;
+}
+
+/* hover for the nav */
+nav:hover {
+    background-color: #0000007e;
+}
+
+/* all my anchor element */
+a {
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+/* logo */
+.logo a {
+    font-size: 3rem;
+    padding: 1rem;
+    font-weight: 600;
+}
+
+/* ul list links styles */
+ul li {
+    list-style-type: none;
+
+}
+
+ul {
+    display: flex;
+    gap: 1rem;
+    margin: 0 2rem;
+}
+
+ul a {
+    padding: .5rem;
+    display: inline-block;
+    min-width: 6rem;
+    text-align: center;
+    border-radius: 5px;
+    font-weight: 500;
+    letter-spacing: .07rem;
+
+
+}
+
+
+/* for our background image */
+.img {
+    width: 100%;
+    height: 100vh;
+    transition: background 2s ease;
+    background: url('./images/19.PNG') ;
+    background-color: #000;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+}
+.img::after {
+    content: '';
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.7);
+
+}
+
+.img .container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: whitesmoke;
+}
+
+/* for our text */
+h1 {
+ font-size: 3rem;
+}
+h2 {
+    font-size: 2.5rem;
+}
+
+/* styles for our button */
+ 
+.btns {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+}
+
+button {
+    padding: .5rem 1.5rem;
+    margin: 1rem .5rem;
+    border-radius: 5px;
+    line-height: 1.3rem;
+    font-weight: bold;
+    cursor: pointer;
+    border: 2px solid whitesmoke;
+}
+button:first-child {
+    background: none;
+    color: whitesmoke;
+}
+
+/* hover effects on links and buttons */
+
+ul a,
+button{
+    transition: all .5s ease;
+}
+ul a:hover {
+    background: rgb(221, 217, 217);
+    color: #1b1a1a;
+}
+button:hover {
+    background: rgba(221, 217, 217, 0.901);
+    border-color:rgba(221, 217, 217, 0.901);
+    color: #535151;
+    
+}
+
+.background {
+    position: fixed;
+    bottom: 8px;
+    transition: all 1s ease;
+    color: rgba(245, 245, 245, 0.33);
+    background: rgba(221, 217, 217, 0.06);
+    border-color:rgba(221, 217, 217, 0.06);
+}
+.background:hover {
+    border-color:rgba(221, 217, 217, 0.901);
+    background: rgba(221, 217, 217, 0.901);
+    color: #1b1a1a;
+}
+.background:active {
+    border: #53515100;
+}
